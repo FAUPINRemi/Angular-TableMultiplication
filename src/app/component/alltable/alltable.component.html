@@ -1,0 +1,13 @@
+<p>alltable works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col" *ngFor="let table of tables; index as i">
+      <h2 class="my-4">Table de {{i + 1}} :</h2>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let value of table; index as j">
+          <strong>{{i + 1}} x {{j + 1}} = {{value}}</strong>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
