@@ -3,12 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { OnetableComponent } from './component/onetable/onetable.component';
 import { AlltableComponent } from './component/alltable/alltable.component';
 import { AccueilComponent } from './component/accueil/accueil.component';
-import { IpdisplayComponent } from './component/ipdisplay/ipdisplay.component';
+import { IpServiceService } from './service/ip-service.service';
 const routes: Routes = [
   { path: 'onetable', component: OnetableComponent },
   { path: 'alltable', component: AlltableComponent },
   { path: 'accueil', component: AccueilComponent },
-  { path: 'ipdisplay', component: IpdisplayComponent },
+ { path: 'ip', component: IpServiceService},
+ 
   { path: '', component: AccueilComponent}
 ];
 
